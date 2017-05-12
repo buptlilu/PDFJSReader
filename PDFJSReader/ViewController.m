@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "PDFWebView.h"
 
 @interface ViewController ()
 
@@ -14,16 +15,13 @@
 
 @implementation ViewController
 
+#pragma mark - life cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    PDFWebView *webView = [[PDFWebView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:webView];
+    NSString *pdfFilePath = [[NSBundle mainBundle] pathForResource:@"git搭建" ofType:@"pdf"];
+    [webView loadPDFFile:pdfFilePath];
 }
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
 @end
