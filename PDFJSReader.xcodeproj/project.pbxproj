@@ -15,6 +15,9 @@
 		2C1585741EC5ABB1002510DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1585721EC5ABB1002510DA /* LaunchScreen.storyboard */; };
 		2C15857F1EC5ABB1002510DA /* PDFJSReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C15857E1EC5ABB1002510DA /* PDFJSReaderTests.m */; };
 		2C15858A1EC5ABB1002510DA /* PDFJSReaderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1585891EC5ABB1002510DA /* PDFJSReaderUITests.m */; };
+		2C1585991EC5AC6A002510DA /* PDFWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1585981EC5AC6A002510DA /* PDFWebView.m */; };
+		2C15859B1EC5AD71002510DA /* minified in Resources */ = {isa = PBXBuildFile; fileRef = 2C15859A1EC5AD71002510DA /* minified */; };
+		2C15859D1EC5AD9A002510DA /* git搭建.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2C15859C1EC5AD9A002510DA /* git搭建.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 		2C1585851EC5ABB1002510DA /* PDFJSReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDFJSReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C1585891EC5ABB1002510DA /* PDFJSReaderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFJSReaderUITests.m; sourceTree = "<group>"; };
 		2C15858B1EC5ABB1002510DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C1585971EC5AC6A002510DA /* PDFWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFWebView.h; sourceTree = "<group>"; };
+		2C1585981EC5AC6A002510DA /* PDFWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFWebView.m; sourceTree = "<group>"; };
+		2C15859A1EC5AD71002510DA /* minified */ = {isa = PBXFileReference; lastKnownFileType = folder; path = minified; sourceTree = "<group>"; };
+		2C15859C1EC5AD9A002510DA /* git搭建.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "git搭建.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +108,10 @@
 		2C1585631EC5ABB1002510DA /* PDFJSReader */ = {
 			isa = PBXGroup;
 			children = (
+				2C15859C1EC5AD9A002510DA /* git搭建.pdf */,
+				2C15859A1EC5AD71002510DA /* minified */,
+				2C1585971EC5AC6A002510DA /* PDFWebView.h */,
+				2C1585981EC5AC6A002510DA /* PDFWebView.m */,
 				2C1585671EC5ABB1002510DA /* AppDelegate.h */,
 				2C1585681EC5ABB1002510DA /* AppDelegate.m */,
 				2C15856A1EC5ABB1002510DA /* ViewController.h */,
@@ -250,6 +261,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C1585741EC5ABB1002510DA /* LaunchScreen.storyboard in Resources */,
+				2C15859D1EC5AD9A002510DA /* git搭建.pdf in Resources */,
+				2C15859B1EC5AD71002510DA /* minified in Resources */,
 				2C1585711EC5ABB1002510DA /* Assets.xcassets in Resources */,
 				2C15856F1EC5ABB1002510DA /* Main.storyboard in Resources */,
 			);
@@ -278,6 +291,7 @@
 			files = (
 				2C15856C1EC5ABB1002510DA /* ViewController.m in Sources */,
 				2C1585691EC5ABB1002510DA /* AppDelegate.m in Sources */,
+				2C1585991EC5AC6A002510DA /* PDFWebView.m in Sources */,
 				2C1585661EC5ABB1002510DA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,6 +534,7 @@
 				2C1585901EC5ABB1002510DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C1585911EC5ABB1002510DA /* Build configuration list for PBXNativeTarget "PDFJSReaderTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +543,7 @@
 				2C1585931EC5ABB1002510DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C1585941EC5ABB1002510DA /* Build configuration list for PBXNativeTarget "PDFJSReaderUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +552,7 @@
 				2C1585961EC5ABB1002510DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
