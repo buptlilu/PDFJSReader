@@ -23,5 +23,10 @@
     [self.view addSubview:webView];
     NSString *pdfFilePath = [[NSBundle mainBundle] pathForResource:@"git搭建" ofType:@"pdf"];
     [webView loadPDFFile:pdfFilePath];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSString *pdfFilePath2 = [[NSBundle mainBundle] pathForResource:@"003" ofType:@"pdf"];
+        [webView loadPDFFile:pdfFilePath2];
+    });
 }
 @end
