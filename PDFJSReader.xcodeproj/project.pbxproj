@@ -17,7 +17,7 @@
 		2C15858A1EC5ABB1002510DA /* PDFJSReaderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1585891EC5ABB1002510DA /* PDFJSReaderUITests.m */; };
 		2C1585991EC5AC6A002510DA /* PDFWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1585981EC5AC6A002510DA /* PDFWebView.m */; };
 		2C15859B1EC5AD71002510DA /* minified in Resources */ = {isa = PBXBuildFile; fileRef = 2C15859A1EC5AD71002510DA /* minified */; };
-		2C15859D1EC5AD9A002510DA /* git搭建.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2C15859C1EC5AD9A002510DA /* git搭建.pdf */; };
+		2C15859D1EC5AD9A002510DA /* git.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2C15859C1EC5AD9A002510DA /* git.pdf */; };
 		2C47FF5D21A3C93800754AD1 /* 003.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2C47FF5C21A3C93800754AD1 /* 003.pdf */; };
 /* End PBXBuildFile section */
 
@@ -58,7 +58,7 @@
 		2C1585971EC5AC6A002510DA /* PDFWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFWebView.h; sourceTree = "<group>"; };
 		2C1585981EC5AC6A002510DA /* PDFWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFWebView.m; sourceTree = "<group>"; };
 		2C15859A1EC5AD71002510DA /* minified */ = {isa = PBXFileReference; lastKnownFileType = folder; path = minified; sourceTree = "<group>"; };
-		2C15859C1EC5AD9A002510DA /* git搭建.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "git搭建.pdf"; sourceTree = "<group>"; };
+		2C15859C1EC5AD9A002510DA /* git.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = git.pdf; sourceTree = "<group>"; };
 		2C47FF5C21A3C93800754AD1 /* 003.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 003.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,7 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				2C47FF5C21A3C93800754AD1 /* 003.pdf */,
-				2C15859C1EC5AD9A002510DA /* git搭建.pdf */,
+				2C15859C1EC5AD9A002510DA /* git.pdf */,
 				2C15859A1EC5AD71002510DA /* minified */,
 				2C1585971EC5AC6A002510DA /* PDFWebView.h */,
 				2C1585981EC5AC6A002510DA /* PDFWebView.m */,
@@ -243,6 +243,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -265,7 +266,7 @@
 			files = (
 				2C47FF5D21A3C93800754AD1 /* 003.pdf in Resources */,
 				2C1585741EC5ABB1002510DA /* LaunchScreen.storyboard in Resources */,
-				2C15859D1EC5AD9A002510DA /* git搭建.pdf in Resources */,
+				2C15859D1EC5AD9A002510DA /* git.pdf in Resources */,
 				2C15859B1EC5AD71002510DA /* minified in Resources */,
 				2C1585711EC5ABB1002510DA /* Assets.xcassets in Resources */,
 				2C15856F1EC5ABB1002510DA /* Main.storyboard in Resources */,

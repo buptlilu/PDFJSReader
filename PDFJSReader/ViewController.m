@@ -18,15 +18,11 @@
 #pragma mark - life cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    PDFWebView *webView = [[PDFWebView alloc] initWithFrame:self.view.bounds];
+    WKWebViewConfiguration * configuration = [[WKWebViewConfiguration alloc] init];
+    [configuration.preferences setValue:@"TRUE" forKey:@"allowFileAccessFromFileURLs"];
+    PDFWebView *webView = [[PDFWebView alloc] initWithFrame:self.view.bounds configuration:configuration];
     [self.view addSubview:webView];
-    NSString *pdfFilePath = [[NSBundle mainBundle] pathForResource:@"git搭建" ofType:@"pdf"];
-    [webView loadPDFFile:pdfFilePath];
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        NSString *pdfFilePath2 = [[NSBundle mainBundle] pathForResource:@"003" ofType:@"pdf"];
-        [webView loadPDFFile:pdfFilePath2];
-    });
+    NSURL *pdfFileURL = [[NSBundle mainBundle] URLForResource:@"git.pdf" withExtension:nil];
+    [webView loadPDFFile:pdfFileURL];
 }
 @end

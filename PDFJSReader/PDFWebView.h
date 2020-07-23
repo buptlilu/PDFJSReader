@@ -7,18 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 
-@interface PDFWebView : UIWebView
+@interface PDFWebView : WKWebView
 
 /**
  pdf file path
  **/
-@property (readonly) NSString *filePath;
+@property (readonly) NSURL *filePath;
 
 /**
  load pdf file
 
  @param filePath pdf file path
  */
-- (void)loadPDFFile:(NSString*)filePath;
+- (void)loadPDFFile:(NSURL *)filePath;
 @end
